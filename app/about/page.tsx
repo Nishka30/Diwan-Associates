@@ -58,7 +58,7 @@ export default function AboutPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <motion.div
+              {/* <motion.div
                 className="bg-purple-50 p-6 rounded-lg"
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
@@ -68,9 +68,9 @@ export default function AboutPage() {
                 <p className="text-gray-600">
                   Our services meet the highest international standards for quality management.
                 </p>
-              </motion.div>
+              </motion.div> */}
               
-              <motion.div
+              {/* <motion.div
                 className="bg-purple-50 p-6 rounded-lg"
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 <p className="text-gray-600">
                   Consistently rated 5 stars by our satisfied clients across services.
                 </p>
-              </motion.div>
+              </motion.div> */}
               
               <motion.div
                 className="bg-purple-50 p-6 rounded-lg"

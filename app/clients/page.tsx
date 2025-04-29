@@ -159,10 +159,10 @@ export default function ClientsPage() {
                               <Check className="h-5 w-5 text-purple-600 mr-2" />
                               <span>Tax Audit</span>
                             </li>
-                            <li className="flex items-center">
+                            {/* <li className="flex items-center">
                               <Check className="h-5 w-5 text-purple-600 mr-2" />
                               <span>ISO Certification</span>
-                            </li>
+                            </li> */}
                             <li className="flex items-center">
                               <Check className="h-5 w-5 text-purple-600 mr-2" />
                               <span>Import Export License</span>

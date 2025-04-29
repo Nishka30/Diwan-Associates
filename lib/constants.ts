@@ -1,7 +1,7 @@
 // Business information
 export const BUSINESS_NAME = "Diwan & Associates";
 export const CONTACT_PHONE = ["+91 8910077904", "+91 7003699264"];
-export const CONTACT_EMAIL = ["tds.ssc@gmail.com", "cavishaldiwan@gmail.com"];
+export const CONTACT_EMAIL = ["taxupchar@gmail.com"];
 export const BUSINESS_ADDRESS = "133, Vivekananda Sarani, Shiv Siddhi Villa, Room 401, Hindmotor, Hooghly, Pin - 712233";
 export const BUSINESS_LOGO = "/logo.svg";
 
@@ -24,7 +24,7 @@ export const SERVICE_CATEGORIES = [
         id: "company-formation",
         title: "Company Formation",
         description: "Complete assistance in registering your business as Private Limited, LLP, OPC, or Partnership.",
-        price: "Starting from ₹5,999",
+        price: "Starting from ₹15,000 to ₹20,000",
         icon: "building",
       },
       {
@@ -41,6 +41,13 @@ export const SERVICE_CATEGORIES = [
         price: "Starting from ₹1,999",
         icon: "store",
       },
+      {
+        id: "society-trust-compliance",
+        title: "Society & Trust Compliance",
+        description: "Registration, return filings, and compliance for societies and trusts.",
+        price: "Starting from ₹10,000",
+        icon: "users",
+      },
     ],
   },
   {
@@ -54,6 +61,13 @@ export const SERVICE_CATEGORIES = [
         description: "Professional assistance in filing income tax returns for individuals and businesses.",
         price: "Starting from ₹999",
         icon: "receiptTax",
+      },
+      {
+        id: "income-tax-assessment",
+        title: "Income Tax Assessment & Appeals",
+        description: "Assistance with income tax assessments and appeals.",
+        price: "Starting from ₹15,000",
+        icon: "clipboardCheck",
       },
       {
         id: "tax-audit",
@@ -82,6 +96,13 @@ export const SERVICE_CATEGORIES = [
         description: "Registration and compliance management for professional tax obligations.",
         price: "Starting from ₹1,499",
         icon: "wallet",
+      },
+      {
+        id: "tds-return",
+        title: "TDS Return Compliance",
+        description: "Management of TDS return filings.",
+        price: "Starting from ₹1,500",
+        icon: "fileInvoice",
       },
     ],
   },
@@ -152,6 +173,13 @@ export const SERVICE_CATEGORIES = [
         description: "Registration on Government e-Marketplace for government tenders and contracts.",
         price: "Starting from ₹2,999",
         icon: "shoppingBag",
+      },
+      {
+        id: "dgft-import-export",
+        title: "DGFT Import/Export Compliance",
+        description: "Assistance with DGFT regulations for import/export activities.",
+        price: "Starting from ₹5,000",
+        icon: "globe",
       },
     ],
   },
