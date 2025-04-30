@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, Scale, Square as GavelSquare } from "lucide-react";
 import { BUSINESS_NAME } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,8 @@ import { cn } from "@/lib/utils";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,13 +35,16 @@ const Navbar = () => {
     { name: "Contact", href: "/contact" },
   ];
 
+  // Always use white background for non-homepage routes or when scrolled
+  const navbarBg = (!isHomePage || scrolled) 
+    ? "bg-white/95 backdrop-blur-sm shadow-sm" 
+    : "bg-transparent";
+
   return (
     <header
       className={cn(
-        "fixed w-full top-0 z-50 transition-all duration-300 ease-in-out",
-        scrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-sm py-3"
-          : "bg-transparent py-4"
+        "fixed w-full top-0 z-50 transition-all duration-300 ease-in-out py-3",
+        navbarBg
       )}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -51,10 +57,7 @@ const Navbar = () => {
               <Scale className="h-5 w-5" />
               <GavelSquare className="h-5 w-5 ml-[-2px]" />
             </div>
-            <span className={cn(
-              "transition-all duration-300",
-              scrolled ? "text-purple-800" : "text-purple-800"
-            )}>
+            <span className="text-purple-800">
               {BUSINESS_NAME}
             </span>
           </Link>
@@ -66,9 +69,8 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 className={cn(
-                  "px-4 py-2 rounded-md text-sm font-medium transition-colors hover:bg-purple-50",
-                  scrolled ? "text-gray-800" : "text-gray-800",
-                  "hover:text-purple-800"
+                  "px-4 py-2 rounded-md text-sm font-medium transition-colors hover:bg-purple-50 text-gray-800 hover:text-purple-800",
+                  pathname === link.href && "bg-purple-50 text-purple-800"
                 )}
               >
                 {link.name}
@@ -102,7 +104,10 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-800"
+                className={cn(
+                  "px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-800",
+                  pathname === link.href && "bg-purple-50 text-purple-800"
+                )}
               >
                 {link.name}
               </Link>

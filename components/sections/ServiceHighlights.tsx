@@ -21,7 +21,11 @@ import {
   Flame,
   Pill,
   ShoppingBag,
-  ArrowRight
+  ArrowRight,
+  FileText,
+  ShieldCheck,
+  BookOpen,
+  Globe
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -51,6 +55,10 @@ const ServiceHighlights = () => {
       case "pill": return <Pill {...iconProps} />;
       case "shoppingBag": return <ShoppingBag {...iconProps} />;
       case "trademark": return <Briefcase {...iconProps} />;
+      case "fileText": return <FileText {...iconProps} />;
+      case "shieldCheck": return <ShieldCheck {...iconProps} />;
+      case "bookOpen": return <BookOpen {...iconProps} />;
+      case "globe": return <Globe {...iconProps} />;
       default: return <Check {...iconProps} />;
     }
   };

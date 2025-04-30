@@ -48,6 +48,20 @@ export const SERVICE_CATEGORIES = [
         price: "Starting from ₹10,000",
         icon: "users",
       },
+      {
+        id: "roc-compliances",
+        title: "ROC Compliances",
+        description: "Return filing, Minutes book preparation, IEPF Work, and other ROC Compliances.",
+        price: "Starting from ₹10,000",
+        icon: "fileText",
+      },
+      {
+        id: "pf-esi-registration",
+        title: "PF and ESI Registration",
+        description: "Registration and return filing for Provident Fund and Employee State Insurance.",
+        price: "Starting from ₹10,000",
+        icon: "shieldCheck",
+      },
     ],
   },
   {
@@ -104,6 +118,13 @@ export const SERVICE_CATEGORIES = [
         price: "Starting from ₹1,500",
         icon: "fileInvoice",
       },
+      {
+        id: "books-documents",
+        title: "Books and Documents Preparation",
+        description: "Professional preparation and maintenance of financial books and business documents.",
+        price: "As per work",
+        icon: "bookOpen",
+      },
     ],
   },
   {
@@ -111,18 +132,18 @@ export const SERVICE_CATEGORIES = [
     title: "Certifications",
     description: "Enhance your business credibility with recognized certifications.",
     services: [
-      {
-        id: "iso-certificate",
-        title: "ISO Certificate",
-        description: "Assistance in obtaining ISO certification to validate your quality management systems.",
-        price: "Starting from ₹15,999",
-        icon: "award",
-      },
+      // {
+      //   id: "iso-certificate",
+      //   title: "ISO Certificate",
+      //   description: "Assistance in obtaining ISO certification to validate your quality management systems.",
+      //   price: "Starting from ₹15,999",
+      //   icon: "award",
+      // },
       {
         id: "msme-certificate",
         title: "MSME Certificate (UDYAM)",
         description: "Registration under the MSME scheme to avail government benefits and support.",
-        price: "Starting from ₹1,999",
+        price: "Starting from ₹1,000",
         icon: "badgeCheck",
       },
       {

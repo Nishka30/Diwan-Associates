@@ -3,7 +3,32 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Check, ChevronRight, Building, Receipt as ReceiptTax, Award, Store, Briefcase, CreditCard, ClipboardCheck, Landmark, FileBarChart, Wallet, PenTool, Utensils, Ship, Flame, Pill, ShoppingBag, Bookmark as Trademark, ArrowRight } from "lucide-react";
+import { 
+  Check, 
+  ChevronRight, 
+  Building, 
+  Receipt as ReceiptTax, 
+  Award, 
+  Store, 
+  Briefcase, 
+  CreditCard, 
+  ClipboardCheck, 
+  Landmark, 
+  FileBarChart, 
+  Wallet, 
+  PenTool, 
+  Utensils, 
+  Ship, 
+  Flame, 
+  Pill, 
+  ShoppingBag, 
+  Bookmark as Trademark, 
+  ArrowRight,
+  FileText,
+  ShieldCheck,
+  BookOpen,
+  Globe
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SERVICE_CATEGORIES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -31,6 +56,10 @@ export default function ServicesPage() {
       case "pill": return <Pill {...iconProps} />;
       case "shoppingBag": return <ShoppingBag {...iconProps} />;
       case "trademark": return <Trademark {...iconProps} />;
+      case "fileText": return <FileText {...iconProps} />;
+      case "shieldCheck": return <ShieldCheck {...iconProps} />;
+      case "bookOpen": return <BookOpen {...iconProps} />;
+      case "globe": return <Globe {...iconProps} />;
       default: return <Check {...iconProps} />;
     }
   };
