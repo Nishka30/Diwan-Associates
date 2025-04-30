@@ -51,15 +51,20 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center space-x-2 text-purple-800 font-bold text-xl"
+            className="flex items-center space-x-2"
           >
             <div className="flex items-center justify-center rounded-full bg-purple-800 text-white p-1">
               <Scale className="h-5 w-5" />
               <GavelSquare className="h-5 w-5 ml-[-2px]" />
             </div>
-            <span className="text-purple-800">
-              {BUSINESS_NAME}
-            </span>
+            <div className="flex flex-col">
+              <span className="text-purple-800 font-bold text-xl">
+                {BUSINESS_NAME}
+              </span>
+              <span className="text-gray-600 text-xs">
+                an initiative by Diwan & Associates
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

@@ -32,7 +32,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About Diwan & Associates
+              About TaxUpchar
             </h1>
             <p className="text-xl text-gray-700">
               Your trusted partner in business compliance and regulatory solutions.

@@ -1,5 +1,5 @@
 // Business information
-export const BUSINESS_NAME = "Diwan & Associates";
+export const BUSINESS_NAME = "TaxUpchar";
 export const CONTACT_PHONE = ["+91 8910077904", "+91 7003699264"];
 export const CONTACT_EMAIL = ["taxupchar@gmail.com"];
 export const BUSINESS_ADDRESS = "133, Vivekananda Sarani, Shiv Siddhi Villa, Room 401, Hindmotor, Hooghly, Pin - 712233";
@@ -57,8 +57,8 @@ export const SERVICE_CATEGORIES = [
       },
       {
         id: "pf-esi-registration",
-        title: "PF and ESI Registration",
-        description: "Registration and return filing for Provident Fund and Employee State Insurance.",
+        title: "PF and ESI Registration & Returns",
+        description: "Registration and monthly/annual return filing for Provident Fund and Employee State Insurance.",
         price: "Starting from ₹10,000",
         icon: "shieldCheck",
       },
@@ -124,6 +124,20 @@ export const SERVICE_CATEGORIES = [
         description: "Professional preparation and maintenance of financial books and business documents.",
         price: "As per work",
         icon: "bookOpen",
+      },
+      {
+        id: "accounting-services",
+        title: "Accounting & Bookkeeping",
+        description: "Complete accounting and bookkeeping services for businesses of all sizes.",
+        price: "As per project/company size",
+        icon: "calculator",
+      },
+      {
+        id: "tax-planning",
+        title: "Tax Planning Services",
+        description: "Strategic tax planning including Insurance, Mediclaim, and Mutual Fund investments.",
+        price: "As per requirements",
+        icon: "pieChart",
       },
     ],
   },
@@ -226,7 +240,7 @@ export const TESTIMONIALS = [
     id: 1,
     name: "Rajesh Kumar",
     company: "TechSolutions Pvt Ltd",
-    comment: "Diwan & Associates made our company registration process seamless. Their expertise saved us time and ensured everything was done correctly. Highly recommended!",
+    comment: "TaxUpchar made our company registration process seamless. Their expertise saved us time and ensured everything was done correctly. Highly recommended!",
     rating: 5,
     avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150",
   },
@@ -234,7 +248,7 @@ export const TESTIMONIALS = [
     id: 2,
     name: "Priya Sharma",
     company: "Wellness Hub",
-    comment: "Getting all our licenses and permits was a breeze with Diwan & Associates. Their team guided us through every step and handled all the paperwork efficiently.",
+    comment: "Getting all our licenses and permits was a breeze with TaxUpchar. Their team guided us through every step and handled all the paperwork efficiently.",
     rating: 5,
     avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150",
   },
@@ -242,7 +256,7 @@ export const TESTIMONIALS = [
     id: 3,
     name: "Amit Patel",
     company: "Global Exports Inc",
-    comment: "As an export business, we needed specialized licenses and certifications. Diwan & Associates provided exceptional service and made the complex process straightforward.",
+    comment: "As an export business, we needed specialized licenses and certifications. TaxUpchar provided exceptional service and made the complex process straightforward.",
     rating: 4,
     avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150",
   },
@@ -250,7 +264,7 @@ export const TESTIMONIALS = [
 
 // About section content
 export const ABOUT_CONTENT = {
-  intro: "Diwan & Associates is a premier consultancy firm providing comprehensive business solutions across India. With years of experience and a dedicated team of professionals, we help businesses navigate complex regulatory requirements, obtain necessary licenses, and maintain statutory compliance.",
+  intro: "TaxUpchar is a premier consultancy firm providing comprehensive business solutions across India. With years of experience and a dedicated team of professionals, we help businesses navigate complex regulatory requirements, obtain necessary licenses, and maintain statutory compliance.",
   mission: "Our mission is to simplify business compliance and regulatory procedures for entrepreneurs, allowing them to focus on their core business operations while we handle the complexities of registration, licensing, and statutory compliance.",
   vision: "We envision becoming the most trusted consultancy partner for businesses across India, known for our integrity, expertise, and client-centric approach in delivering seamless compliance solutions.",
   values: [

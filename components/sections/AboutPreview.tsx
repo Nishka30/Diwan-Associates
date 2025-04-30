@@ -63,7 +63,7 @@ const AboutPreview = () => {
           {/* Text Content */}
           <div className="space-y-6 text-center lg:text-left order-1 lg:order-2">
             <div className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium mb-2">
-              About Diwan & Associates
+              About TaxUpchar
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Your Trusted Partner for Business Success

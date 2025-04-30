@@ -39,7 +39,7 @@ export default function ClientsPage() {
               Our Clients
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              At Diwan & Associates, we serve a diverse range of clients, providing specialized services tailored to meet their unique business needs.
+              At TaxUpchar, we serve a diverse range of clients, providing specialized services tailored to meet their unique business needs.
             </p>
           </div>
 

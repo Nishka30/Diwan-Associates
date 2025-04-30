@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Diwan & Associates | Professional Consultancy Services',
+  title: 'TaxUpchar | Professional Consultancy Services',
   description: 'Leading consultancy services for business registration, compliance, taxation, and more. Expert solutions tailored to your business needs.',
 };
 
